@@ -1,4 +1,4 @@
-namespace donation.db;
+namespace donation;
 
 using {
     cuid,

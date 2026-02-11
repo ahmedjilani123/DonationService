@@ -1,7 +1,7 @@
-using {donation.db as db} from '../db/Schema';
+using {donation as db} from '../db/Schema';
 
 
-service DonationSrv @(path: 'donationsrv') {
+service DonationSrv @(path: 'DonationSrv') {
     entity Users        as projection on db.User;
     entity Transactions as projection on db.Transaction;
 
