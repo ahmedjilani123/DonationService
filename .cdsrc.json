@@ -5,13 +5,6 @@
       "kind": "postgres",
       "impl": "@cap-js/postgres",
        "requestTimeout": 120000,
-          "pool": {
-        "min": 0,
-        "max": 10,
-        "idleTimeoutMillis": 30000,
-        "acquireTimeoutMillis": 30000,
-        "connectionTimeoutMillis": 30000
-      },
       "credentials": {
             "host": "ep-nameless-fire-aig7cbam-pooler.c-4.us-east-1.aws.neon.tech",
             "port": 5432,
