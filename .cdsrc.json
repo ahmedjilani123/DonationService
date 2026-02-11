@@ -5,11 +5,11 @@
       "kind": "postgres",
       "impl": "@cap-js/postgres",
       "credentials": {
-            "host": "dpg-d668h16sb7us73atkqa0-a.oregon-postgres.render.com",
-            "password":"7Ty0xRJ7ibCopgeQJsXusnCoKCZCngTJ",
-          "port": 5432,
-          "user": "donation_tasu_user",
-          "database": "donation_tasu",
+            "host": "ep-dry-king-aiwjqgka-pooler.c-4.us-east-1.aws.neon.tech",
+            "port": 5432,
+            "password":"npg_rXN6QSGI4Hvu",
+          "user": "neondb_owner",
+          "database": "neondb",
           "ssl":true
       }
     },
