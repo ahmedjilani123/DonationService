@@ -1,17 +1,14 @@
 {
-  
   "requires": {
     "db": {
       "kind": "postgres",
       "impl": "@cap-js/postgres",
-       "requestTimeout": 120000,
+      "requestTimeout": 120000,
       "credentials": {
-            "host": "ep-nameless-fire-aig7cbam-pooler.c-4.us-east-1.aws.neon.tech",
-            "port": 5432,
-            "password":"npg_ZHVQkndWrp42",
-          "user": "neondb_owner",
-          "database": "neondb",
-          "ssl":true
+        "port": 5432,
+        "user": "neondb_owner",
+        "database": "neondb",
+        "ssl": true
       }
     },
     "auth": {
