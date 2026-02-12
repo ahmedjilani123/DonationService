@@ -10,7 +10,7 @@ service DonationSrv @(path: 'DonationSrv') {
         receiptNumber : String;
         pdfContent    : LargeBinary;
     }
-
-    function generateDonationReceipt(userID: UUID, TransactionId: UUID) returns DonationReceipt;
+    action UserLogin(email: String, password: String) returns array of Users;
+    action generateDonationReceipt(userID: UUID, TransactionId: UUID) returns DonationReceipt;
 
 }

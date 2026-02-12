@@ -1,0 +1,133 @@
+@server=http://localhost:4004
+@username=alice
+@password=
+
+
+### Users
+# @name Users_GET
+GET {{server}}/odata/v4/DonationSrv/Users
+Authorization: Basic {{username}}:{{password}}
+
+
+### Users
+# @name Users_POST
+POST {{server}}/odata/v4/DonationSrv/Users
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "name": "name-1971777",
+  "email": "ahmed@gmail.com",
+  "password": "1232123@",
+  "role": "role-1971777",
+  "address": "address-1971777",
+  "phone": "phone-1971777",
+  "gender": "gender-1971777",
+  "dateOfBirth": "2021-10-30",
+  "firstName": "firstName-1971777",
+  "lastName": "lastName-1971777",
+  "middleName": "middleName-1971777",
+  "profilePicture": "profilePicture-1971777"
+}
+
+### Users
+# @name Users_POST
+POST {{server}}/odata/v4/DonationSrv/UserLogin
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "email": "ahmed@gmail.com",
+  "password": "432!23"
+}
+
+### Users
+# @name Users_PATCH
+PUT {{server}}/odata/v4/DonationSrv/Users('520f9f86-a74c-4d98-be9b-9708ff9ab6b9')
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "firstName": "ahmed",
+  "email": "ahmed@gmail.com",
+  "password": "432!23"
+ 
+}
+
+
+### Users
+# @name Users_DELETE
+DELETE {{server}}/odata/v4/DonationSrv/Users/19717772-306d-49bf-941b-8c67b9018759
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+
+### Transactions
+# @name Transactions_GET
+GET {{server}}/odata/v4/DonationSrv/Transactions
+Authorization: Basic {{username}}:{{password}}
+
+
+### Transactions
+# @name Transactions_POST
+POST {{server}}/odata/v4/DonationSrv/Transactions
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": "10186552-97d1-40c7-b0c7-48a0cbadd9f3",
+  "amount": 22323749.87,
+  "date": "2017-01-07",
+  "type": "type-10186552",
+  "status": "status-10186552",
+  "user": {
+    "ID": "19717772-306d-49bf-941b-8c67b9018759"
+  },
+  "address": "address-10186552",
+  "panNo": "panNo-10186552",
+  "aadharNo": "aadharNo-10186552",
+  "TransactionId": "TransactionId-10186552",
+  "receiptNumber": "receiptNumber-10186552",
+  "pinCode": "pinCode-10186552",
+  "totalAmount": 80336552.58,
+  "createdAt": "2005-04-26T18:30:00.000Z",
+  "createdBy": "createdBy.62bzs@example.net",
+  "modifiedAt": "2015-05-13T18:30:00.000Z",
+  "modifiedBy": "modifiedBy.62bzs@example.org"
+}
+
+
+### Transactions
+# @name Transactions_PATCH
+PATCH {{server}}/odata/v4/DonationSrv/Transactions/10186552-97d1-40c7-b0c7-48a0cbadd9f3
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
+
+{
+  "ID": "10186552-97d1-40c7-b0c7-48a0cbadd9f3",
+  "amount": 22323749.87,
+  "date": "2017-01-07",
+  "type": "type-10186552",
+  "status": "status-10186552",
+  "user": {
+    "ID": "19717772-306d-49bf-941b-8c67b9018759"
+  },
+  "address": "address-10186552",
+  "panNo": "panNo-10186552",
+  "aadharNo": "aadharNo-10186552",
+  "TransactionId": "TransactionId-10186552",
+  "receiptNumber": "receiptNumber-10186552",
+  "pinCode": "pinCode-10186552",
+  "totalAmount": 80336552.58,
+  "createdAt": "2005-04-26T18:30:00.000Z",
+  "createdBy": "createdBy.62bzs@example.net",
+  "modifiedAt": "2015-05-13T18:30:00.000Z",
+  "modifiedBy": "modifiedBy.62bzs@example.org"
+}
+
+
+### Transactions
+# @name Transactions_DELETE
+DELETE {{server}}/odata/v4/DonationSrv/Transactions/10186552-97d1-40c7-b0c7-48a0cbadd9f3
+Content-Type: application/json
+Authorization: Basic {{username}}:{{password}}
